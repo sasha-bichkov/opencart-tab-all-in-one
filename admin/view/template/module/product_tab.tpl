@@ -40,7 +40,6 @@
               <input type="text" name="limit" value="<?php echo $limit; ?>" placeholder="<?php echo $entry_limit; ?>" id="input-limit" class="form-control" />
             </div>
           </div>
-
           <div class="form-group">
             <label class="col-sm-2 control-label" for="input-width"><?php echo $entry_width; ?></label>
             <div class="col-sm-10">
@@ -59,7 +58,6 @@
               <?php } ?>
             </div>
           </div>
-
           <!-- STATUS -->
           <div class="form-group">
             <label class="col-sm-2 control-label" for="input-status"><?php echo $entry_status; ?></label>

@@ -1,17 +1,17 @@
-  <div id="tabs-<?php echo $module; ?>" class="htabs">
-	<?php if($latest_products){ ?>
-	<a href="#tab-latest-<?php echo $module; ?>"><?php echo $tab_latest; ?></a>
-	<?php } ?>
-	<?php if($featured_products){ ?>
-	<a href="#tab-featured-<?php echo $module; ?>"><?php echo $tab_featured; ?></a>
-	<?php } ?>
-	<?php if($bestseller_products){ ?>
-	<a href="#tab-bestseller-<?php echo $module; ?>"><?php echo $tab_bestseller; ?></a>
-	<?php } ?>
-	<?php if($special_products){ ?>
-	<a href="#tab-special-<?php echo $module; ?>"><?php echo $tab_special; ?></a>
-	<?php } ?>
- </div>
+<div id="tabs-<?php echo $module; ?>" class="htabs">
+  <?php if($latest_products){ ?>
+  <a href="#tab-latest-<?php echo $module; ?>"><?php echo $tab_latest; ?></a>
+  <?php } ?>
+  <?php if($featured_products){ ?>
+  <a href="#tab-featured-<?php echo $module; ?>"><?php echo $tab_featured; ?></a>
+  <?php } ?>
+  <?php if($bestseller_products){ ?>
+  <a href="#tab-bestseller-<?php echo $module; ?>"><?php echo $tab_bestseller; ?></a>
+  <?php } ?>
+  <?php if($special_products){ ?>
+  <a href="#tab-special-<?php echo $module; ?>"><?php echo $tab_special; ?></a>
+  <?php } ?>
+</div>
 <?php if($latest_products){ ?>
  <div id="tab-latest-<?php echo $module; ?>" class="tab-content">
     <div class="box-product">
@@ -66,7 +66,6 @@
     </div>
  </div>
 <?php } ?>
-
 <?php if($bestseller_products){ ?>
  <div id="tab-bestseller-<?php echo $module; ?>" class="tab-content">
     <div class="box-product">
@@ -94,7 +93,6 @@
     </div>
  </div>
 <?php } ?>
-
 <?php if($special_products){ ?>
  <div id="tab-special-<?php echo $module; ?>" class="tab-content">
     <div class="box-product">
@@ -122,7 +120,6 @@
     </div>
  </div>
 <?php } ?>
-
 <script type="text/javascript">
 $('#tabs-<?php echo $module; ?> a').tabs();
 </script> 

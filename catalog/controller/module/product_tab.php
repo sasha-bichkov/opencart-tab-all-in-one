@@ -3,7 +3,7 @@ class ControllerModuleProductTab extends Controller {
   public function index($setting) {
 
     if(!isset($this->request->get['route']) || $this->request->get['route'] != 'product/product'){
-    $this->document->addScript('catalog/view/javascript/jquery/tabs.js');
+      $this->document->addScript('catalog/view/javascript/jquery/tabs.js');
     }
 
     static $module = 0;
@@ -16,7 +16,6 @@ class ControllerModuleProductTab extends Controller {
     $data['tab_featured'] = $this->language->get('tab_featured');
     $data['tab_bestseller'] = $this->language->get('tab_bestseller');
     $data['tab_special'] = $this->language->get('tab_special');
-
 
     $data['button_cart'] = $this->language->get('button_cart');
         
@@ -158,7 +157,6 @@ class ControllerModuleProductTab extends Controller {
         'href'       => $this->url->link('product/product', 'product_id=' . $result['product_id']),
       );
     }
-
 
     //Featured
     $data['featured_products'] = array();
